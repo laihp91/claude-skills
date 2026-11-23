@@ -8,7 +8,9 @@ trên máy, nên mọi skill ở đây có mặt trong mọi dự án.
 ```bash
 # Nếu máy đã có ~/.claude/skills thì cất đi trước
 [ -e ~/.claude/skills ] && mv ~/.claude/skills ~/.claude/skills.old
-git clone <địa-chỉ-repo> ~/.claude/skills
+gh auth login --web    # lần đầu trên máy mới; cài gh bằng: brew install gh
+gh auth setup-git
+git clone https://github.com/laihp91/claude-skills.git ~/.claude/skills
 ```
 
 Mở phiên Claude Code mới là thấy skill.
