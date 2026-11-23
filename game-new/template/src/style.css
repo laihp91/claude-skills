@@ -1,0 +1,28 @@
+/* All sizes: calc(N * var(--u)), N in design pixels of a 1080-wide frame.
+   Fonts: TTF/OTF files in public/assets/fonts (Unity builds the same font from the same file). Every glyph you show
+   must exist in the font (no emoji / ★ fallbacks: use shapes or images). */
+@font-face { font-family: 'Lilita One'; src: url('/assets/fonts/LilitaOne.ttf') format('truetype'); font-display: block; }
+html, body { margin: 0; height: 100%; background: #1d2433; overflow: hidden; touch-action: none; user-select: none; }
+body { display: flex; align-items: center; justify-content: center; font-family: 'Lilita One', sans-serif; }
+#frame { position: relative; --u: 0.5px; }
+#game { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#ui { position: absolute; inset: 0; pointer-events: none; }
+#ui [hidden] { display: none !important; }
+.hud { position: absolute; left: 0; right: 0; top: calc(40 * var(--u)); display: flex; justify-content: space-between; padding: 0 calc(40 * var(--u)); }
+.pill { width: calc(300 * var(--u)); height: calc(110 * var(--u)); border-radius: calc(55 * var(--u)); background: #24408e; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: calc(56 * var(--u)); }
+.pill.time { background: #e2563b; }
+.shade { position: absolute; inset: 0; background: rgba(10, 20, 40, 0.55); display: flex; align-items: center; justify-content: center; pointer-events: auto; }
+.shade.dark { background: rgba(0, 0, 0, 0.85); }
+.panel { width: calc(800 * var(--u)); height: calc(760 * var(--u)); border-radius: calc(60 * var(--u)); background: #fff7e6; position: relative;
+  display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; }
+.panel h1 { margin: 0; font-size: calc(80 * var(--u)); font-weight: 400; color: #2b3a67; text-align: center; }
+.stars { display: flex; gap: calc(30 * var(--u)); }
+.star { width: calc(100 * var(--u)); height: calc(100 * var(--u)); border-radius: calc(50 * var(--u)); background: #d9d2c3; }
+.star.on { background: #ffb400; }
+.btn { width: calc(520 * var(--u)); height: calc(150 * var(--u)); border: 0; border-radius: calc(75 * var(--u)); color: #fff;
+  font-size: calc(64 * var(--u)); font-weight: 400; font-family: inherit; cursor: pointer; }
+.btn.green { background: #2fb84f; }
+.btn.blue { background: #2f7de1; }
+.adbox { width: calc(700 * var(--u)); height: calc(300 * var(--u)); border-radius: calc(30 * var(--u)); background: #333; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: calc(70 * var(--u)); }

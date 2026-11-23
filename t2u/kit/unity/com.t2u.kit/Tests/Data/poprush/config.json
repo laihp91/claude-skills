@@ -1,0 +1,8 @@
+{
+  "world": { "w": 9, "h": 16 },
+  "comboWindow": 0.6,
+  "bombPenalty": 3,
+  "adBonusTime": 10,
+  "adSeconds": 1.5,
+  "popTime": 0.18
+}

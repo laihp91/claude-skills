@@ -1,0 +1,28 @@
+{
+  "name": "T2U.Kit.Editor",
+  "rootNamespace": "T2U.Kit.Editor",
+  "references": [
+    "T2U.Kit",
+    "T2U.Kit.Unity",
+    "Unity.TextMeshPro",
+    "UnityEngine.UI",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "UnityEditor.TestRunner",
+    "UnityEngine.TestRunner"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "Newtonsoft.Json.dll",
+    "nunit.framework.dll"
+  ],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

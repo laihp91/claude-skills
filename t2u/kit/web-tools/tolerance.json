@@ -1,0 +1,4 @@
+{
+  "_note": "Absolute tolerance per numeric field name. Logs are rounded to 3 decimals by both engines, so 0 (exact) is the normal target; raise a field only for documented non-deterministic parts.",
+  "default": 0
+}

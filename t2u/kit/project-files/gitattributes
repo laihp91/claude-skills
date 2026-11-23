@@ -1,0 +1,26 @@
+# Unity: text assets merged with UnityYAMLMerge (Smart Merge); binaries never diffed/merged.
+# Setup once per machine:  git config merge.unityyamlmerge.driver '"<Unity>/Contents/Tools/UnityYAMLMerge" merge -p %O %B %A %A'
+*.cs        text diff=csharp eol=lf
+*.json      text eol=lf
+*.jsonl     text eol=lf
+*.md        text eol=lf
+*.shader    text eol=lf
+*.asmdef    text eol=lf
+*.unity     merge=unityyamlmerge eol=lf
+*.prefab    merge=unityyamlmerge eol=lf
+*.asset     merge=unityyamlmerge eol=lf
+*.mat       merge=unityyamlmerge eol=lf
+*.anim      merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.meta      merge=unityyamlmerge eol=lf
+*.png  binary
+*.jpg  binary
+*.psd  binary
+*.ttf  binary
+*.otf  binary
+*.mp3  binary
+*.ogg  binary
+*.wav  binary
+*.fbx  binary
+*.dll  binary
+*.bytes binary

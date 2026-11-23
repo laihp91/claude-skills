@@ -1,0 +1,7 @@
+[
+  { "id": 1, "time": 30, "goal": 12, "spawnEvery": 0.9, "speed": [1.6, 2.4], "radius": [0.75, 1.05], "bombChance": 0.0 },
+  { "id": 2, "time": 30, "goal": 16, "spawnEvery": 0.8, "speed": [1.8, 2.8], "radius": [0.7, 1.0], "bombChance": 0.1 },
+  { "id": 3, "time": 28, "goal": 18, "spawnEvery": 0.7, "speed": [2.0, 3.0], "radius": [0.65, 0.95], "bombChance": 0.15 },
+  { "id": 4, "time": 26, "goal": 20, "spawnEvery": 0.6, "speed": [2.2, 3.3], "radius": [0.6, 0.9], "bombChance": 0.2 },
+  { "id": 5, "time": 25, "goal": 22, "spawnEvery": 0.55, "speed": [2.4, 3.6], "radius": [0.55, 0.85], "bombChance": 0.25 }
+]

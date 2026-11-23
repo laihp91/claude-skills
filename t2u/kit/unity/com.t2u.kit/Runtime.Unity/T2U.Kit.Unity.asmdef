@@ -1,0 +1,14 @@
+{
+  "name": "T2U.Kit.Unity",
+  "rootNamespace": "T2U.Kit",
+  "references": ["T2U.Kit", "Unity.TextMeshPro", "UnityEngine.UI"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

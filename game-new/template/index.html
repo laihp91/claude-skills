@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <title>__GAME_NAME__</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="frame">
+      <canvas id="game"></canvas>
+      <div id="ui">
+        <div class="hud" data-ui-screen="hud">
+          <div class="pill" data-ui="hud.levelBox"><span data-ui="hud.level">Level 1</span></div>
+          <div class="pill" data-ui="hud.scoreBox"><span data-ui="hud.score">0/0</span></div>
+          <div class="pill time" data-ui="hud.timeBox"><span data-ui="hud.time">0</span></div>
+        </div>
+        <div class="shade" data-ui-screen="win" hidden>
+          <div class="panel" data-ui="win.panel">
+            <h1 data-ui="win.title">Level Complete!</h1>
+            <div class="stars" data-ui="win.stars">
+              <div class="star" data-ui="win.star1"></div>
+              <div class="star" data-ui="win.star2"></div>
+              <div class="star" data-ui="win.star3"></div>
+            </div>
+            <button class="btn green" data-ui="win.next" data-ui-button="next">Next</button>
+          </div>
+        </div>
+        <div class="shade" data-ui-screen="lose" hidden>
+          <div class="panel" data-ui="lose.panel">
+            <h1 data-ui="lose.title">Time's up!</h1>
+            <button class="btn blue" data-ui="lose.moreTime" data-ui-button="moreTime">+10s (Ad)</button>
+            <button class="btn green" data-ui="lose.retry" data-ui-button="retry">Retry</button>
+          </div>
+        </div>
+        <div class="shade dark" data-ui-screen="ad" hidden>
+          <div class="adbox" data-ui="ad.box">Ad…</div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
